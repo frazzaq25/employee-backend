@@ -23,10 +23,7 @@ app.use(cors({
     methods:["GET", "POST", "PUT", "DELETE"]
 }))
 
-app.use('/', (req, res) => {
-    res.send("api is working")
 
-})
 app.use('/api/v1', employee);
 app.use('/api/v1', leave);
 app.use('/api/v1', schedule);
